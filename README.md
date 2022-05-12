@@ -109,7 +109,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 3.Find Rtl logic and timing diagram for all flipflops.
 
 4.end the program.
-
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: M.GUNASEKHAR
@@ -211,14 +211,15 @@ nand(n2,clk,t,q);
 nand(q,n1,qbar);
 nand(qbar,n2,q);
 endmodule
-
+```
 
 ### RTL LOGIC FOR FLIPFLOPS 
 ![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/17.png?raw=true)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/18.png?raw=true)
 
 
-### RESULTS 
+### RESULT :
+Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
