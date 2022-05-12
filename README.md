@@ -127,7 +127,7 @@ nand(y,clk,r);
 nand(Q,x,Qbar);
 nand(Qbar,y,Q);
 endmodule
-
+```
 
 
 
@@ -143,7 +143,7 @@ endmodule
 ![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/12.png?raw=true)
 
 
-
+```
 ### PROGRAM 2:
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: M.GUNASEKHAR
@@ -159,6 +159,7 @@ nand(nand2_out,k,clk,q);
 nand(q,nand1_out,qbar,qbar);
 nand(qbar,nand2_out,q);
 endmodule
+```
 
 ### RTL LOGIC FOR FLIPFLOPS 
 ![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/13.png?raw=true)
@@ -168,7 +169,7 @@ endmodule
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 ![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/14.png?raw=true)
 
-
+```
 ### PROGRAM 3:
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: M.GUNASEKHAR
@@ -186,7 +187,7 @@ nand(q,n2,qbar);
 nand(qbar,n1,q);
 endmodule 
 
-
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/15.png?raw=true)
 
@@ -196,7 +197,7 @@ endmodule
 ![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/16.png?raw=true)
 
 
-
+```
 ### PROGRAM 4:
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: M.GUNASEKHAR
