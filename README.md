@@ -102,16 +102,32 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+1.Using nand gates and wires construct sr flip flop.
+
+2.Repeat same steps to construct JK,Df,Tf flipflops.
+
+3.Find Rtl logic and timing diagram for all flipflops.
+
+4.end the program.
 
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: M.GUNASEKHAR
+RegisterNumber:  212221240014
 */
+module sr (Q,Qbar,s,r,clk);
+input s,r,clk;
+output Q,Qbar;
+wire x;
+wire y;
+nand(x,clk,s);
+nand(y,clk,r);
+nand(Q,x,Qbar);
+nand(Qbar,y,Q);
+endmodule
 
 
 
@@ -119,16 +135,97 @@ RegisterNumber:
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
-
-
-
-
-
+![output]()
 
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
+![output]()
+
+
+
+### PROGRAM 2:
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: M.GUNASEKHAR
+RegisterNumber:  212221240014
+
+module jk(q,qbar,k,j,clk);
+input j,k,clk;
+output q,qbar;
+wire nand1_out;
+wire nand2_out;
+nand(nand1_out,j,clk,qbar);
+nand(nand2_out,k,clk,q);
+nand(q,nand1_out,qbar,qbar);
+nand(qbar,nand2_out,q);
+endmodule
+
+### RTL LOGIC FOR FLIPFLOPS 
+![output]()
+
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![output]()
+
+
+
+
+
+### PROGRAM 3:
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: M.GUNASEKHAR
+RegisterNumber:  212221240014
+
+module df(q,qbar,d1,clk);
+input d1,clk;
+output q,qbar;
+wire n1;
+wire n2;
+not(x,d1);
+nand(n1,clk,d1);
+nand(n2,clk,x);
+nand(q,n2,qbar);
+nand(qbar,n1,q);
+endmodule 
+
+
+### RTL LOGIC FOR FLIPFLOPS 
+![output]()
+
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![output]()
+
+
+
+### PROGRAM 4:
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: M.GUNASEKHAR
+RegisterNumber:  212221240014
+
+module tf(t,qbar,q,clk);
+input t,clk;
+output q,qbar;
+wire n1,n2;
+nand(n1,t,clk,qbar);
+nand(n2,clk,t,q);
+nand(q,n1,qbar);
+nand(qbar,n2,q);
+endmodule
+
+
+### RTL LOGIC FOR FLIPFLOPS 
+![output]()
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![output]()
+
+
+
 
 
 
