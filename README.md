@@ -110,14 +110,13 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 4.end the program.
 
-
-
-### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: M.GUNASEKHAR
 RegisterNumber:  212221240014
 */
+
+### program 1:
 module sr (Q,Qbar,s,r,clk);
 input s,r,clk;
 output Q,Qbar;
@@ -135,13 +134,13 @@ endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/11.png?raw=true)
 
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/12.png?raw=true)
 
 
 
@@ -162,15 +161,12 @@ nand(qbar,nand2_out,q);
 endmodule
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/13.png?raw=true)
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![output]()
-
-
-
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/14.png?raw=true)
 
 
 ### PROGRAM 3:
@@ -192,12 +188,12 @@ endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/15.png?raw=true)
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/16.png?raw=true)
 
 
 
@@ -218,20 +214,11 @@ endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![output]()
+![output](https://github.com/gunasekhar159/Experiment--05-Implementation-of-flipflops-using-verilog/blob/main/17.png?raw=true)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 ![output]()
-
-
-
-
-
-
-
-
-
 
 
 ### RESULTS 
